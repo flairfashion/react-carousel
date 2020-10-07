@@ -1,0 +1,88 @@
+{
+  "name": "@brainhubeu/react-carousel",
+  "version": "2.0.2",
+  "description": "Carousel component for React",
+  "engines": {
+    "npm": ">=6.14.8"
+  },
+  "files": [
+    "/lib/*"
+  ],
+  "main": "./lib/react-carousel.js",
+  "scripts": {
+    "lint": "esw webpack.config.* src tools test --color",
+    "clean-dist": "rimraf ./lib && mkdir lib",
+    "prebuild": "npm run clean-dist",
+    "build": "node tools/build.js",
+    "prepack": "cp ../LICENSE.md ../README.md ../docs/CHANGELOG.md .",
+    "test": "jest",
+    "test:coverage": "yarn jest --coverage"
+  },
+  "author": "Brainhub",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/register": "^7.11.5",
+    "autoprefixer": "^9.8.6",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "chalk": "^3.0.0",
+    "classnames": "^2.2.6",
+    "coveralls": "^3.1.0",
+    "css-loader": "^3.6.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^5.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "jest-enzyme": "^7.1.2",
+    "jsdom": "^16.4.0",
+    "lodash": "^4.17.20",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-resize-detector": "^5.2.0",
+    "react-test-renderer": "^16.13.1",
+    "recoil": "^0.0.13",
+    "resize-observer-polyfill": "^1.5.1",
+    "rimraf": "3.0.2",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.1.0",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.44.2"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "keywords": [
+    "react",
+    "carousel",
+    "react-carousel",
+    "react-component",
+    "component",
+    "image",
+    "image-gallery",
+    "image-slider",
+    "responsive",
+    "gallery",
+    "rwd"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brainhubeu/react-carousel"
+  }
+}
